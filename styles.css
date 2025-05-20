@@ -1,3 +1,105 @@
-body{
-    background-color: aquamarine;
+/*Estilo*/
+/*Eu quero mudar o componente html  */
+/* criando Variaveis */
+:root {
+    --cor-primaria: rgb(77, 24, 112);
+    --cor-secundaria: rgb(188, 134, 238);
+    --cor-terciaria: rgb(241, 241, 203);
+    --cor-background: rgb(241, 241, 203);
+    --cor-botaoclaro: rgb(188, 134, 238);
+    --cor-botaoescuro: rgb(77, 24, 112);
+    --cor-textoclaro: rgb(171, 171, 172);
+    --cor-textoescuro: rgb(77, 24, 112);
+    /* espaçamentos */
+    --espaco-xxs: 4px;
+    --espaco-xs: 8px;
+    --espaco-sm: 12px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+    --espaco-xl: 32px;
+    --espaco-xxl: 48px;
+}
+
+body {
+    background-color: var(--cor-background);
+    /* fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margem externa */
+    margin: 0;
+    /* margin interna */
+    padding: 0;
+    /* cor da fonte */
+    color: var(--cor-textoescuro); position: fixed;
+  top: 0;
+    width: 100%;
+
+}
+
+.container {
+    background-color: var(--cor-background);
+    /* tamanho da tela */
+    width: 100%;
+    margin: 0 auto;
+   
+     text-align: center;
+    padding: var(--espaco-lg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-textoescuro);
+}
+/* cabeçalho */
+.header {
+    background-color: var(--cor-primaria);
+     /* alinhamento */
+     text-align: center;
+    padding: var(--espaco-lg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-textoclaro);
+    font-size: 30px;
+}
+/* Navegacao */
+.navLink {
+    background-color: var(--cor-secundaria);
+     /* alinhamento */
+     text-align: center;
+    padding: var(--espaco-sm);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-textoclaro);
+    font-size: 30px;
+}
+/* botoes Navegacao */
+.navLink a {
+    background-color: var(--cor-secundaria);
+     /* alinhamento */
+     text-align: center;
+     /* remover traço embaixo */
+     text-decoration: none;
+     /* 10px superior e inferior */
+     /* 20px direita e esquerda */
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-textoescuro);
+    font-size: 20px;
+    /* ele ocupa o espaco do texto e/ou dimensao do ccomponente */
+    display: inline-block;
+}
+/* configurar o hover do botao */
+.navLink a:hover {
+    
+    background-color: white;
+}
+.footer {
+    background-color: var(--cor-secundaria);
+    padding: var(--espaco-sm);
+     text-align: center;
+    margin: 0;  max-width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-textoescuro);
+    /*fixar conteudo da tela*/
+    position: fixed;
+  bottom: 0;
+    width: 100%;
+}
+main{
+    margin: var(--espaco-lg);
+    text-align: center;
 }
