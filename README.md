@@ -1,2 +1,2 @@
-# PROJETO HTM CSS JS
+# PROJETO HTML CSS JS
 Projeto basico curso html + css + js
